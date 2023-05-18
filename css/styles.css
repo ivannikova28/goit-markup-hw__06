@@ -959,12 +959,16 @@ body   {
 
 .modal-input:focus {
     border: 1px solid #404BBF;
+    border: none;
+    
 }
 
 .modal-input:focus-within + svg {
     fill: #404BBF;
     border-color: var(--accent-color);
     outline: none;
+    border: none;
+    
 }
  
 .modal-form modal-input:focus::placeholder {
@@ -1049,7 +1053,13 @@ body   {
     cursor: pointer;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px
 }
+
 
 .modal-form__check:checked{
     background-color: #404BBF;
@@ -1064,7 +1074,20 @@ body   {
 
 }
 
-.modal-form-check:checked+.modal-check__box>.modal-form-checkbox {
+.check-box__svg {
+    fill: #F4F4FD;
+    opacity: 0;
+}
+
+.modal-form__check:checked + *.modal-form__checkbox {
+    background-color: #404BBF
+} 
+
+.modal-form__check:checked + *.check-box__svg {
+    opacity: 1;
+}
+
+.modal-form-check:checked +.modal-check__box>.modal-form-checkbox {
     background-color: var(--primary-text);
     border: none;
 }
