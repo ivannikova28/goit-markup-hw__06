@@ -664,13 +664,21 @@
         <div class="footer-form__box">
           <p class="footer-form__text">Subscribe</p>
           <form class="footer-form">
-            <label class="footer-label" for="mail">E-mail</label>
-            <input class="input-footer" type="email" name="mail" id="mail" />
-            <button class="footer-btn" type="submit">Subscribe
-            <svg class="footer-icon_send" width="24" height="24"></svg>
-            <use href="./images/icons.svg#icon-send"></use>
-          </button>
-        </form>
+            <label class="footer-label"></label>
+            <input
+              class="input-footer"
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="E-mail"
+            />
+            <button class="footer-btn" type="submit">
+              Subscribe
+              <svg class="footer-icon_send" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
@@ -683,9 +691,7 @@
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
-        <h2 class="modal-title">
-          Leave your contacts and we will call you back
-        </h2>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <label class="modal-label">
             <span class="modal-text__form name-next">Name</span>
@@ -694,7 +700,8 @@
                 class="modal-input"
                 type="text"
                 name="user_name"
-                id="name" required
+                id="name"
+                required
               />
               <svg class="modal-label__svg" width="18" heiht="24">
                 <use href="./images/icons.svg#icon-person"></use>
@@ -719,6 +726,7 @@
               </svg>
             </span>
           </label>
+
           <label class="modal-label">
             <span class="modal-text__form name-next">Comment</span>
             <textarea
@@ -727,8 +735,13 @@
               id=""
               placeholder="Text input"
             ></textarea>
-            <input class="modal-form__check visually-hidden" type="chekbox" name="user_policy" id="user_policy">
           </label>
+          <input
+            class="modal-form__check visually-hidden"
+            type="chekbox"
+            name="user_policy"
+            id="user_policy"
+          />
 
           <label class="modal-check__box" for="user_policy">
             <span class="modal-form__checkbox">
@@ -738,7 +751,7 @@
             </span>
             I accept the terms and conditions of the
             <a href="policy-link">Privacy Policy</a>
-          </label> 
+          </label>
           <button class="modal-send-btn" type="submit">Send</button>
         </form>
       </div>
