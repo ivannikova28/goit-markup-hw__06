@@ -83,7 +83,30 @@ body   {
     margin: 0 auto;
     
 }
+.check-box__svg {
+    fill: red;
+    opacity: 0;
+}
 
+.modal-form__checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.modal-form__check:checked+* .check-box__svg {
+    opacity: 1;
+}
+
+.modal-form__check:checked+* .modal-form__checkbox {
+    background-color: red;
+}
 
     /* HEADER */
    /*  Logo*/
@@ -958,8 +981,10 @@ body   {
 }
 
 .modal-input:focus {
-    border: 1px solid #404BBF;
-    border: none;
+    /* border: 1px solid #404BBF;
+    border: none; */
+    border-color: var(--accent-color);
+    outline: none;
     
 }
 
@@ -1060,7 +1085,7 @@ body   {
     margin-right: 8px
 } */
 .modal-form__checkbox {
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
     width: 16px;
@@ -1068,41 +1093,41 @@ body   {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     cursor: pointer;
-    margin-right: 8px;
+    margin-right: 8px; */
 }
 
-.modal-form__check:checked + * .check-box__svg {
+/* .modal-form__check:checked + * .check-box__svg {
     opacity: 1;
 }
 
 .modal-form__check:checked + * .modal-form__checkbox {
     background-color: red;
-}
+} */
 
 
 .modal-form__check:checked{
-    background-color: #404BBF;
+    /* background-color: #404BBF; */
 }
-
+/* 
 .check-box__svg{
     width: 16px;
     height:16px;
     opacity: 1;
-    /* background-color: var(--primary-text); */
+    background-color: var(--primary-text);
     border: none;
 
 }
 
-/* .check-box__svg {
+.check-box__svg {
     fill: #F4F4FD;
     opacity: 0;
-} */
+}
 .check-box__svg {
     fill: red;
     opacity: 0;
 }
 
-/* .modal-form__check:checked + *.modal-form__checkbox {
+.modal-form__check:checked + *.modal-form__checkbox {
     background-color: #404BBF
 } 
 
@@ -1117,6 +1142,7 @@ body   {
 .modal-form-check:checked +.modal-check__box .checkbox-svg {
     opacity: 1;
 } */
+
 
 .policy-link {
     color: var(--primary-text);
