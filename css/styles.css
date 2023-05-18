@@ -83,30 +83,12 @@ body   {
     margin: 0 auto;
     
 }
+
 .check-box__svg {
     fill: red;
     opacity: 0;
 }
 
-.modal-form__checkbox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 16px;
-    height: 16px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 2px;
-    cursor: pointer;
-    margin-right: 8px;
-}
-
-.modal-form__check:checked+* .check-box__svg {
-    opacity: 1;
-}
-
-.modal-form__check:checked+* .modal-form__checkbox {
-    background-color: red;
-}
 
     /* HEADER */
    /*  Logo*/
@@ -1070,22 +1052,8 @@ body   {
     outline: none;
 }
 
-
-/* 
 .modal-form__checkbox {
-    width: 16px;
-    height: 16px;
-    cursor: pointer;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 2px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 2px;
-    cursor: pointer;
-    margin-right: 8px
-} */
-.modal-form__checkbox {
-    /* display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 16px;
@@ -1093,55 +1061,17 @@ body   {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     cursor: pointer;
-    margin-right: 8px; */
+    margin-right: 8px;
 }
 
-/* .modal-form__check:checked + * .check-box__svg {
+.modal-form__check:checked+* .check-box__svg {
     opacity: 1;
 }
 
-.modal-form__check:checked + * .modal-form__checkbox {
-    background-color: red;
-} */
-
-
-.modal-form__check:checked{
-    /* background-color: #404BBF; */
-}
-/* 
-.check-box__svg{
-    width: 16px;
-    height:16px;
-    opacity: 1;
-    background-color: var(--primary-text);
-    border: none;
-
+.modal-form__check:checked+* .modal-form__checkbox {
+    background-color: var(--accent-color);
 }
 
-.check-box__svg {
-    fill: #F4F4FD;
-    opacity: 0;
-}
-.check-box__svg {
-    fill: red;
-    opacity: 0;
-}
-
-.modal-form__check:checked + *.modal-form__checkbox {
-    background-color: #404BBF
-} 
-
-.modal-form__check:checked + *.check-box__svg {
-    opacity: 1;
-}
-
-.modal-form-check:checked +.modal-check__box>.modal-form-checkbox {
-    background-color: var(--primary-text);
-    border: none;
-}
-.modal-form-check:checked +.modal-check__box .checkbox-svg {
-    opacity: 1;
-} */
 
 
 .policy-link {
